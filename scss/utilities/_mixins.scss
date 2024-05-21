@@ -1,0 +1,17 @@
+@mixin tipografia{
+    font-family: "Poppins", sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin border{
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px black;
+}

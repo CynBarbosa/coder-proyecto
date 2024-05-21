@@ -1,0 +1,29 @@
+@import "../utilities/maps";
+@import "../utilities/mixins";
+
+.noticias{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .625rem;
+    section{
+        width: 95%;
+        height: 600px;
+        margin: 10px;
+        img{
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
+        h2{
+            background-color: rgba(19, 2, 175, 0.486);
+            padding: 10px;
+            color: map-get($color , color3 );/*celeste claro*/
+            @include tipografia;
+            font-size: medium;
+            text-align: start;
+        }
+    } 
+}

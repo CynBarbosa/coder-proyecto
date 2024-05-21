@@ -1,0 +1,12 @@
+@import "../utilities/maps";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: radial-gradient(circle, #1302af, #0b24c0, #0239cf, #004ddf, #005fed, #126cf4, #2279fa, #3185ff, #468fff, #5799fe, #68a2fd, #78acfc);
+    min-height: 100vh;
+    min-width: none;
+}

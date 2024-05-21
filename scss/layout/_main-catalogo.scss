@@ -1,0 +1,28 @@
+@import "../utilities/maps";
+@import "../utilities/mixins";
+
+.catalogo-principal{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "boku chaisaw dbs jujutsu" 
+    "kimetsu pokemon sao tokyo";
+    column-gap: 10px;
+    row-gap: .625rem;
+    div img{
+        width: 90%;
+        height: 70%;
+        margin: 10px;
+        object-fit: cover;
+    }
+    div img:hover{
+        filter: grayscale(1);
+        transform: scale(0.9);
+    }
+    div h2{
+        color: map-get($color , color3 );/*celeste claro*/
+        @include tipografia;
+        text-align: center;
+    }
+}

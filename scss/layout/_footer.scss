@@ -1,0 +1,44 @@
+@import "../utilities/maps";
+@import "../utilities/mixins";
+
+footer{
+    background-color: map-get($color , color2 );/*celeste oscuro*/
+    padding: 9px;
+    margin-top: auto;
+    .pie-pagina{
+        width: 98%;
+        height: 50px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 50% 30% 20%);
+        grid-template-areas: "logo-pie seguinos redes";
+        column-gap: 5px;
+        align-items: center;
+        h4{
+            color: map-get($color , color1 );
+            text-shadow: 2px 3px 5px gray;
+            padding: 0px 10px;
+            @include tipografia;
+            font-size: x-large;
+        }
+        h5{
+            color: map-get($color , color4 );
+            @include tipografia;
+            font-size: medium;
+        }
+        .redes{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: "face inst tik x";
+            column-gap: 20px;
+            img{
+                background-color: map-get($color , color5 );
+                @include border;
+            }
+        }
+    }
+}
+
+
+

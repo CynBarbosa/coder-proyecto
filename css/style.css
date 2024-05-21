@@ -1,246 +1,261 @@
-/*
-font-family: "Poppins", sans-serif;
-font-style: oblique;
-font-weight: bold;
-paleta
-fondo: rgb(120, 172, 252)
-logo: rgb(19, 2, 175)
-texto: rgb(0, 119, 255)
-*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: black;
-    min-height: 100vh;
-    min-width: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-.encabezado{
-    background-color: rgb(0, 119, 255);/*celeste oscuro*/
-    width: 100%;
-    height: 60px;
-    padding: 0px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    color: rgb(19, 2, 175);
+body {
+  background-image: radial-gradient(circle, #1302af, #0b24c0, #0239cf, #004ddf, #005fed, #126cf4, #2279fa, #3185ff, #468fff, #5799fe, #68a2fd, #78acfc);
+  min-height: 100vh;
+  min-width: none; }
+
+header .encabezado {
+  background-color: #0077ff;
+  /*celeste oscuro*/
+  width: 100%;
+  height: 60px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  header .encabezado .logo {
+    color: #1302af;
     text-shadow: 2px 3px 5px gray;
     font-family: "Poppins", sans-serif;
     font-style: oblique;
-    font-size: xx-large;
     font-weight: bold;
-}
-.boton-busqueda{
-    box-shadow: 2px 3px 5px grey;
-    border-radius: 10px;
-}
-.boton-busqueda input{
-    border: none;
-    border-radius: 10px;
-    padding-right: 100px;
-    padding-left: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-}
-.menu{
-    background-color: rgb(0, 119, 255);/*celeste oscuro*/
-    width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
-}
-.bar-nav{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-areas: "inicio catalogo noticias vota";
-}
-.bar-nav a{
-    text-decoration: none;
-    color: rgb(19, 2, 175);
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    margin-left: 20px;
-}
+    font-size: xx-large; }
+  header .encabezado .boton-busqueda {
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px black; }
+    header .encabezado .boton-busqueda input {
+      border: none;
+      border-radius: 10px;
+      padding-right: 100px;
+      padding-left: 20px;
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      font-weight: 25rem; }
 
-.pagina-principal{
-    height: auto;
-    display: grid;
-    grid-template-rows: repeat(2, 40% 50%);
-    grid-template-areas: "nov-principal" "ranking";
-    row-gap: .625rem;
-}
-.nov-principal{
+header .menu {
+  background-color: #0077ff;
+  /*celeste oscuro*/
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px; }
+  header .menu .bar-nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header .menu .bar-nav a {
+      padding: 5px 10px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 2px 3px 5px black;
+      text-decoration: none;
+      color: #1302af;
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold; }
+    header .menu .bar-nav a:hover {
+      color: #0077ff; }
+
+.pagina-principal {
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(2, 300px 520px);
+  grid-template-areas: "nov-principal" "ranking";
+  row-gap: .625rem; }
+  .pagina-principal .nov-principal {
     width: 98%;
-    margin: 10px;
-}
-.nov-principal h2{
-    background-color: rgb(120, 172, 252);/*celeste claro*/
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    padding-left: 20px;
-    width: 220px;
-    border-radius: 20px;
-}
-.nov-principal img{
-    width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-.ranking{
+    margin: 0px 10px; }
+    .pagina-principal .nov-principal h2 {
+      background-color: #030303;
+      /*celeste claro*/
+      color: #78acfc;
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      padding-left: 20px;
+      width: 220px;
+      border-radius: 20px; }
+    .pagina-principal .nov-principal img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .pagina-principal .nov-principal img:hover {
+      filter: grayscale(1);
+      transform: scale(0.98); }
+  .pagina-principal .ranking {
     width: 98%;
     margin-left: 10px;
-    margin-top: 50px;
-}
-.ranking h2{
-    background-color: rgb(120, 172, 252);/*celeste claro*/
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    padding-left: 20px;
-    width: 170px;
-    border-radius: 20px;
-}
-.puestos{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "puesto1 puesto2 puesto3"
-    "puesto4 puesto5 puesto6";
-    column-gap: 10px;
-}
-.img-principal{
-    width: 90%;
-    height: 90%;
-    margin: 10px;
-    object-fit: cover;
-}
-.puestos div h3{
-    color: rgb(120, 172, 252);/*celeste claro*/
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: x-large;
-    text-align: center;
-}
+    margin-top: 50px; }
+    .pagina-principal .ranking h2 {
+      background-color: #030303;
+      /*celeste claro*/
+      color: #78acfc;
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      padding-left: 20px;
+      width: 170px;
+      border-radius: 20px; }
+    .pagina-principal .ranking .puestos {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "puesto1 puesto2 puesto3" "puesto4 puesto5 puesto6";
+      column-gap: 10px; }
+      .pagina-principal .ranking .puestos .img-principal {
+        width: 90%;
+        height: 90%;
+        margin: 10px;
+        object-fit: cover; }
+      .pagina-principal .ranking .puestos div h3 {
+        color: #030303;
+        /*celeste claro*/
+        font-family: "Poppins", sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: x-large;
+        text-align: center; }
+      .pagina-principal .ranking .puestos div h3:hover {
+        filter: drop-shadow(5px 5px 5px white); }
 
-.catalogo-principal{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "boku chaisaw dbs jujutsu" 
-    "kimetsu pokemon sao tokyo";
-    column-gap: 10px;
-    row-gap: .625rem;
-}
-.catalogo-principal div img{
+.catalogo-principal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "boku chaisaw dbs jujutsu"  "kimetsu pokemon sao tokyo";
+  column-gap: 10px;
+  row-gap: .625rem; }
+  .catalogo-principal div img {
     width: 90%;
     height: 70%;
     margin: 10px;
-    object-fit: cover;
-}
-.catalogo-principal div h2{
-    color: rgb(120, 172, 252);/*celeste claro*/
+    object-fit: cover; }
+  .catalogo-principal div img:hover {
+    filter: grayscale(1);
+    transform: scale(0.9); }
+  .catalogo-principal div h2 {
+    color: #030303;
+    /*celeste claro*/
     font-family: "Poppins", sans-serif;
     font-style: oblique;
     font-weight: bold;
-    text-align: center;
-}
+    text-align: center; }
 
-.informacion{
-    display: grid;
-    grid-template-rows: repeat(2, 50px 300px);
-    grid-template-areas: 
-    "titulo"
-    "caracteristica";
-}
-.informacion h2{
-    color: rgb(120, 172, 252);/*celeste claro*/
+.informacion {
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(2, 50px 80%);
+  grid-template-areas: "titulo" "caracteristica"; }
+  .informacion h2 {
+    color: #030303;
+    /*celeste claro*/
     font-family: "Poppins", sans-serif;
     font-style: oblique;
     font-weight: bold;
-    text-align: center;
-}
-.caracteristica{
+    text-align: center; }
+  .informacion .caracteristica {
     display: grid;
-    grid-template-columns: repeat(2, 300px 75%);
+    grid-template-columns: repeat(2, 300px 77%);
     grid-template-areas: "img-info text-info";
-    column-gap: 5px;
-}
-.caracteristica img{
-    width: 100%;
-    height: 100%;
-    margin: 10px;
-    object-fit: cover;
-}
-.text-info{
-    color: rgb(120, 172, 252);/*celeste claro*/
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: medium;
-    text-align: start;
-    margin: 10px;
-}
+    column-gap: 10px; }
+    .informacion .caracteristica img {
+      width: 100%;
+      height: 100%;
+      margin: 10px;
+      object-fit: cover; }
+    .informacion .caracteristica .text-info {
+      background-color: rgba(2, 2, 2, 0.514);
+      color: #2b2b2b;
+      /*celeste claro*/
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      font-size: medium;
+      text-align: start;
+      margin: 10px;
+      padding: 10px; }
 
-.noticias{
-    height: auto;
-    display: grid;
-    grid-template-rows: repeat(2, 50%);
-    grid-template-areas: "noticias1" "noticias2";
-    gap: .3125rem;
-}
-.noticias section img{
+.noticias {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: .625rem; }
+  .noticias section {
     width: 95%;
-    height: 300px;
-    margin: 10px;
-    margin-left: 30px;
-    object-fit: cover;
-}
-.noticias section h2{
-    background-color: rgba(19, 2, 175, 0.486);
-    color: rgb(120, 172, 252);
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: medium;
-    text-align: start;
-    margin: 10px;
-}
+    height: 600px;
+    margin: 10px; }
+    .noticias section img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover; }
+    .noticias section h2 {
+      background-color: rgba(19, 2, 175, 0.486);
+      padding: 10px;
+      color: #030303;
+      /*celeste claro*/
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      font-size: medium;
+      text-align: start; }
 
-.votacion div img{
-    width: 10%;
-    height: 10%;
+.votacion {
+  width: 95%;
+  height: auto;
+  margin: 10px; }
+  .votacion img {
+    width: 15%;
+    height: 15%;
     margin: 0px;
     margin-left: 20px;
-    object-fit: cover;
-}
-.votacion div h2{
-    color: rgb(120, 172, 252);
+    object-fit: cover; }
+  .votacion .descripcion {
+    background-color: rgba(88, 87, 87, 0.192);
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px black; }
+    .votacion .descripcion h2 {
+      color: #030303;
+      /*celeste claro*/
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      font-size: x-large;
+      text-align: start; }
+    .votacion .descripcion p {
+      color: #030303;
+      /*celeste claro*/
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      font-size: medium;
+      text-align: start; }
+  .votacion div button {
+    width: 100px;
+    height: 100px;
     font-family: "Poppins", sans-serif;
     font-style: oblique;
     font-weight: bold;
-    font-size: x-large;
-    text-align: start;
-}
+    font-size: larger; }
 
-footer{
-    background-color: rgb(0, 119, 255);/*celeste oscuro*/
-    padding: 9px;
-    margin-top: auto;
-}
-.pie-pagina{
+footer {
+  background-color: #0077ff;
+  /*celeste oscuro*/
+  padding: 9px;
+  margin-top: auto; }
+  footer .pie-pagina {
     width: 98%;
     height: 50px;
     padding: 10px;
@@ -248,291 +263,177 @@ footer{
     grid-template-columns: repeat(3, 50% 30% 20%);
     grid-template-areas: "logo-pie seguinos redes";
     column-gap: 5px;
-    align-items: center;
-}
-.pie-pagina h4{
-    color: rgb(19, 2, 175);
-    text-shadow: 2px 3px 5px gray;
-    padding: 0px 10px;
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: x-large;
-}
-.pie-pagina h5{
-    color: black;
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: medium;
-}
-.redes{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "face inst tik x";
-    column-gap: 20px;
-}
-
-@media(max-width:768px){
-    body{
-        background-color: black;
-        min-height: 100vh;
-    }
-    .encabezado{
-        width: 100%;
-        height: 60px;
-        padding: 0px 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .logo{
-        color: rgb(19, 2, 175);
-        text-shadow: 2px 3px 5px gray;
-        padding: 0px 5px;
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-size: x-large;
-        font-weight: bold;
-    }
-    .boton-busqueda input{
-        border: none;
-        border-radius: 10px;
-        padding-right: 45px;
-        padding-left: 20px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-    }
-    .bar-nav{
-        background-color: rgb(0, 119, 255);/*celeste oscuro*/
-        width: 100%;
-        height: 45px;
-        list-style: none;
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-    }
-    .bar-nav li{
-        display: grid;
-        grid-template-columns: repeat(4, 25% 25% 25% 25%);
-        grid-template-areas: "inicio catalogo noticias vota";
-    }
-    .bar-nav li a{
-        text-decoration: none;
-        color: rgb(19, 2, 175);
-        padding: 5px;
-        box-shadow: 2px 3px 5px grey;
+    align-items: center; }
+    footer .pie-pagina h4 {
+      color: #1302af;
+      text-shadow: 2px 3px 5px gray;
+      padding: 0px 10px;
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      font-size: x-large; }
+    footer .pie-pagina h5 {
+      color: #2b2b2b;
+      font-family: "Poppins", sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      font-size: medium; }
+    footer .pie-pagina .redes {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "face inst tik x";
+      column-gap: 20px; }
+      footer .pie-pagina .redes img {
         background-color: white;
-        margin: 5px 30px;
-        border-radius: 20px;
-        text-align: center;
-    }
-    .catalogo-principal{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "boku chaisaw dbs jujutsu" 
-        "kimetsu pokemon sao tokyo";
-        column-gap: 10px;
-        row-gap: .625rem;
-    }
-    .catalogo-principal div h2{
-        color: rgb(120, 172, 252);/*celeste claro*/
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: medium;
-        text-align: center;
-    }
-    .pie-pagina{
-        width: 100%;
-        height: 30px;
-        display: grid;
-        grid-template-columns: repeat(3, 40% 35% 20%);
-        grid-template-areas: "logo-pie seguinos redes";
-        column-gap: 5px;
-    }
-    .pie-pagina h4{
-        color: rgb(19, 2, 175);
-        text-shadow: 2px 3px 5px gray;
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: medium;
-    }
-    .pie-pagina h5{
-        color: black;
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: small;
-    }
-    .redes{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "face inst tik x";
-        column-gap: 10px;
-    }
-}
+        border-radius: 5px;
+        box-shadow: 2px 3px 5px black; }
 
-@media(max-width:320px){
-    body{
-        background-color: black;
-        min-height: 100vh;
-    }
-    .encabezado{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .logo{
-        color: rgb(19, 2, 175);
-        text-shadow: 2px 3px 5px gray;
-        padding: 10px 2px 0px;
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-size: x-large;
-        font-weight: bold;
-    }
-    .boton-busqueda input{
-        border: none;
-        border-radius: 10px;
-        padding-right: 40px;
-        padding-left: 10px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-    }
-    .menu{
-        background-color: rgb(0, 119, 255);/*celeste oscuro*/
-        width: 100%;
-        height: 50px;
-        margin-bottom: 10px;
-    }
-    .bar-nav{
-        display: grid;
-        grid-template-rows: repeat(2, 40%);
-        grid-template-columns: repeat(2, 40%);
-        grid-template-areas: 
-        "inicio catalogo" 
-        "noticias vota";
-    }
-    .bar-nav a{
-        text-decoration: none;
-        color: rgb(19, 2, 175);
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: smaller;
-        margin-left: 20px;
-        margin-top: 10px;
-    }
-    .pagina-principal{
-        height: auto;
-        display: grid;
-        grid-template-rows: repeat(2, 20% 50%);
-        grid-template-areas: "nov-principal" "ranking";
-    }
-    .puestos{
+@media (max-width: 768px) {
+  header .logo {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 50px; }
+  header .boton-busqueda input {
+    border-radius: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    font-weight: 200px; }
+  .pagina-principal {
+    height: 1200px; }
+  .catalogo-principal {
+    column-gap: 5px;
+    row-gap: .3125rem; }
+    .catalogo-principal div img {
+      margin: 5px 0 0 10px;
+      width: 80%;
+      height: 80%; }
+    .catalogo-principal div h2 {
+      font-size: 15px; }
+  .informacion .caracteristica {
+    display: grid;
+    grid-template-columns: repeat(2, 200px 70%);
+    grid-template-areas: "img-info text-info";
+    column-gap: 5px; }
+    .informacion .caracteristica img {
+      width: 80%;
+      height: 100%;
+      margin: 5px 5px 0 10px; }
+    .informacion .caracteristica .text-info {
+      margin: 5px; }
+  .noticias section {
+    height: 500px; }
+    .noticias section img {
+      height: 88%; }
+  footer .pie-pagina {
+    width: 98%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .3125rem; }
+    footer .pie-pagina .redes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25rem; } }
+
+@media (max-width: 320px) {
+  header .encabezado {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .encabezado .logo {
+      font-size: 30px;
+      margin-bottom: 5px; }
+    header .encabezado .boton-busqueda input {
+      border-radius: 10px;
+      padding-right: 0;
+      padding-left: 0;
+      font-weight: 6.25rem; }
+  header .menu {
+    height: 100px; }
+    header .menu .bar-nav {
+      display: grid;
+      grid-template-rows: repeat(2, 40%);
+      grid-template-columns: repeat(2, 40%);
+      grid-template-areas: "inicio catalogo"  "noticias vota";
+      row-gap: .625rem; }
+      header .menu .bar-nav a {
+        margin-right: 20px;
+        margin-left: 0; }
+  .pagina-principal {
+    height: 1200px; }
+    .pagina-principal .nov-principal {
+      width: 95%; }
+    .pagina-principal .ranking {
+      width: 95%; }
+      .pagina-principal .ranking .puestos {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "puesto1 puesto2"
-        "puesto3 puesto4"
-        "puesto5 puesto6";
-        column-gap: 10px;
-    }
-    .img-principal{
-        width: 80%;
-        height: 80%;
-        margin: 10px;
-        object-fit: cover;
-    }
-    .catalogo-principal{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "boku chaisaw"
-        "dbs jujutsu" 
-        "kimetsu pokemon" 
-        "sao tokyo";
-        column-gap: 10px;
-        row-gap: .625rem;
-    }
-    .catalogo-principal div h2{
-        color: rgb(120, 172, 252);/*celeste claro*/
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: medium;
-        text-align: center;
-    }
-    .informacion{
+        grid-template-areas: "puesto1 puesto2" "puesto3 puesto4" "puesto5 puesto6";
+        column-gap: 5px;
+        row-gap: 15px; }
+        .pagina-principal .ranking .puestos div h3 {
+          font-size: medium; }
+  .catalogo-principal {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "boku chaisaw"  "dbs jujutsu"  "kimetsu pokemon"  "sao tokyo";
+    column-gap: 10px;
+    row-gap: .625rem; }
+    .catalogo-principal div h2 {
+      font-size: medium; }
+  .informacion {
+    width: 95%; }
+    .informacion .caracteristica {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: .3125rem; }
+      .informacion .caracteristica .text-info {
+        font-size: medium; }
+  .noticias {
+    width: 95%; }
+    .noticias section {
+      width: 95%; }
+  /*.votacion div{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-    }
-    .caracteristica{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .votacion div img{
-        width: 20%;
-        height: 20%;
-        margin: 0px;
-        margin-left: 20px;
-        object-fit: cover;
-    }
-    .votacion div h2{
-        color: rgb(120, 172, 252);
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: medium;
-        text-align: start;
-    }
-    footer{
-        background-color: rgb(0, 119, 255);/*celeste oscuro*/
-        /*padding: 9px;*/
-        margin-top: auto;
-    }
-    .pie-pagina{
-        width: 100%;
-        height: 90px;
-        padding-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .pie-pagina h4{
-        color: rgb(19, 2, 175);
-        text-shadow: 2px 3px 5px gray;
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: medium;
-    }
-    .pie-pagina h5{
-        color: black;
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: small;
-    }
-    .redes{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "face inst tik x";
-        column-gap: 10px;
-    }
-
-}
+        gap: .625rem;
+        .descripcion{
+            height: 50px;
+            h2{
+                font-size: medium;
+            }
+            p{
+                font-size: small;
+            }
+        }
+    }*/
+  footer {
+    height: 100px;
+    margin-bottom: 0; }
+    footer .pie-pagina {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: .3125rem; }
+      footer .pie-pagina h4 {
+        font-size: medium; }
+      footer .pie-pagina h5 {
+        font-size: small; }
+      footer .pie-pagina .redes {
+        column-gap: 5px; } }

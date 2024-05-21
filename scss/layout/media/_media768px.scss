@@ -1,0 +1,75 @@
+@media (max-width:768px){
+    header{
+        .logo{
+            margin-left: 10px;
+            margin-top: 5px;
+            font-size: 50px;
+        }
+        .boton-busqueda{
+            input{
+                border-radius: 10px;
+                padding-right: 0;
+                padding-left: 0;
+                font-weight: 200px;
+            }
+        }
+    }
+    .pagina-principal{
+        height: 1200px;
+    }
+    .catalogo-principal{
+        column-gap: 5px;
+        row-gap: .3125rem;
+        div img{
+            margin: 5px 0 0 10px;
+            width: 80%;
+            height: 80%;
+            
+        }
+        div h2{
+            font-size: 15px;
+        }
+    }
+    .informacion{
+        .caracteristica{
+            display: grid;
+            grid-template-columns: repeat(2, 200px 70%);
+            grid-template-areas: "img-info text-info";
+            column-gap: 5px;
+            img{
+                width: 80%;
+                height: 100%;
+                margin: 5px 5px 0 10px;
+            }
+            .text-info{
+                margin: 5px;
+            }
+        }
+    }
+    .noticias{
+        section{
+            height: 500px;
+            img{
+                height: 88%;
+            }
+        }
+    }
+    footer{
+        .pie-pagina{
+            width: 98%;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: .3125rem;
+            .redes{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1.25rem;
+            }
+        }
+    }
+}

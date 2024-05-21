@@ -1,0 +1,39 @@
+@import "../utilities/maps";
+@import "../utilities/mixins";
+
+.votacion{
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    img{
+        width: 15%;
+        height: 15%;
+        margin: 0px;
+        margin-left: 20px;
+        object-fit: cover;
+    }
+    .descripcion {
+        background-color: rgba(88, 87, 87, 0.192);
+        height: 150px;
+        padding: 20px;
+        @include border;
+        h2{
+            color: map-get($color , color3 );/*celeste claro*/
+            @include tipografia;
+            font-size: x-large;
+            text-align: start;
+        }
+        p{
+            color: map-get($color , color3 );/*celeste claro*/
+            @include tipografia;
+            font-size: medium;
+            text-align: start; 
+        }
+    }
+    div button{
+        width: 100px;
+        height: 100px;
+        @include tipografia;
+        font-size: larger;
+    }
+}
