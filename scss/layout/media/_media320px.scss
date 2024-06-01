@@ -90,8 +90,9 @@
         }
     }
     .informacion{
-        width: 95%;
+        width: 100%;
         height: 750px;
+        margin: 0px;
         h2{
             height: 15px;
         }
@@ -102,7 +103,7 @@
             align-items: center;
             gap: 2px;
             .text-info{
-                font-size: 15px;
+                font-size: 14.5px;
             }
         }
     }
