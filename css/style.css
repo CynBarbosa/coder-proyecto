@@ -6,74 +6,101 @@
 
 body {
   background-image: radial-gradient(circle, #1302af, #0b24c0, #0239cf, #004ddf, #005fed, #126cf4, #2279fa, #3185ff, #468fff, #5799fe, #68a2fd, #78acfc);
-  min-height: 100vh;
-  min-width: none; }
+  height: 100%; }
 
-header .encabezado {
+header {
   background-color: #0077ff;
   /*celeste oscuro*/
   width: 100%;
-  height: 60px;
-  padding: 0px 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  header .encabezado .logo {
-    color: #1302af;
-    text-shadow: 2px 3px 5px gray;
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: xx-large; }
-  header .encabezado .boton-busqueda {
-    border-radius: 5px;
-    box-shadow: 2px 3px 5px black; }
-    header .encabezado .boton-busqueda input {
-      border: none;
-      border-radius: 10px;
-      padding-right: 100px;
-      padding-left: 20px;
-      font-family: "Poppins", sans-serif;
-      font-style: oblique;
-      font-weight: bold;
-      font-weight: 25rem; }
-
-header .menu {
-  background-color: #0077ff;
-  /*celeste oscuro*/
-  width: 100%;
-  height: 60px;
-  margin-bottom: 10px; }
-  header .menu .bar-nav {
-    padding: 10px;
+  padding: 1rem 1.5rem; }
+  header .encabezado {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
-    header .menu .bar-nav a {
-      padding: 5px 10px;
-      background-color: white;
-      border-radius: 5px;
-      box-shadow: 2px 3px 5px black;
-      text-decoration: none;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-style: oblique;
+    font-weight: bold; }
+    header .encabezado .logo {
       color: #1302af;
-      font-family: "Poppins", sans-serif;
-      font-style: oblique;
-      font-weight: bold; }
-    header .menu .bar-nav a:hover {
-      color: #0077ff; }
+      text-shadow: 2px 3px 5px gray;
+      font-size: xx-large; }
+      header .encabezado .logo h1 {
+        font-family: "Poppins", sans-serif;
+        font-style: oblique;
+        font-weight: bold; }
+    header .encabezado .boton-busqueda {
+      width: 300px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 5px;
+      box-shadow: 2px 3px 5px black; }
+      header .encabezado .boton-busqueda input {
+        width: 250px;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        font-weight: 25rem;
+        padding-left: 20px; }
+      header .encabezado .boton-busqueda button {
+        width: 50px;
+        border-radius: 5px;
+        background-color: #78acfc; }
+  header div nav {
+    padding: 16px 24px;
+    font-family: "Poppins", sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    header div nav .menu {
+      width: 100%;
+      height: 0;
+      overflow: hidden; }
+      header div nav .menu .menu-ul {
+        height: 85px;
+        list-style: none;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 0; }
+        header div nav .menu .menu-ul li a {
+          text-decoration: none;
+          color: #010101; }
+        header div nav .menu .menu-ul li a:hover {
+          color: #0077ff; }
+    header div nav #toggle, header div nav nav label {
+      display: none; }
+    header div nav label {
+      display: inline-flex;
+      color: black; }
+    header div nav #toggle:checked ~ .menu {
+      height: 100%; }
 
 .pagina-principal {
-  height: auto;
-  display: grid;
-  grid-template-rows: repeat(2, 300px 520px);
-  grid-template-areas: "nov-principal" "ranking";
-  row-gap: .625rem; }
+  width: 100%;
+  height: 1800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: .3125rem; }
   .pagina-principal .nov-principal {
-    width: 98%;
-    height: 100%;
-    margin: 0px 10px; }
+    width: 100%;
+    height: 450px;
+    margin: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: .125rem;
+    overflow: hidden; }
     .pagina-principal .nov-principal h2 {
       background-color: #030303;
       /*celeste claro*/
@@ -81,9 +108,13 @@ header .menu {
       font-family: "Poppins", sans-serif;
       font-style: oblique;
       font-weight: bold;
-      padding-left: 20px;
+      padding-left: 15px;
       width: 220px;
+      margin: 5px;
       border-radius: 20px; }
+    .pagina-principal .nov-principal a {
+      width: 100%;
+      height: 400px; }
     .pagina-principal .nov-principal img {
       width: 100%;
       height: 100%;
@@ -93,8 +124,13 @@ header .menu {
       transform: scale(0.98); }
   .pagina-principal .ranking {
     width: 98%;
-    margin-left: 10px;
-    margin-top: 50px; }
+    height: 1300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
     .pagina-principal .ranking h2 {
       background-color: #030303;
       /*celeste claro*/
@@ -106,26 +142,39 @@ header .menu {
       width: 170px;
       border-radius: 20px; }
     .pagina-principal .ranking .puestos {
+      width: 100%;
       display: grid;
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "puesto1 puesto2 puesto3" "puesto4 puesto5 puesto6";
-      column-gap: 10px; }
-      .pagina-principal .ranking .puestos .img-principal {
-        width: 90%;
-        height: 90%;
-        margin: 10px;
-        object-fit: cover; }
-      .pagina-principal .ranking .puestos div h3 {
-        color: #030303;
-        /*celeste claro*/
-        font-family: "Poppins", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        font-size: x-large;
-        text-align: center; }
-      .pagina-principal .ranking .puestos div h3:hover {
-        filter: drop-shadow(5px 5px 5px white); }
+      column-gap: 10px;
+      row-gap: 35px; }
+      .pagina-principal .ranking .puestos div {
+        width: 410px;
+        height: 600px;
+        margin: 0px 10px 0px 10px;
+        overflow: hidden;
+        position: relative; }
+        .pagina-principal .ranking .puestos div h3 {
+          margin-top: 5px;
+          color: #030303;
+          /*celeste claro*/
+          font-family: "Poppins", sans-serif;
+          font-style: oblique;
+          font-weight: bold;
+          font-size: 40px;
+          text-align: center;
+          position: relative; }
+        .pagina-principal .ranking .puestos div h3:hover {
+          filter: drop-shadow(5px 5px 5px white); }
+        .pagina-principal .ranking .puestos div .img-principal {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .pagina-principal .ranking .puestos div .img-principal:hover {
+          border-style: solid;
+          filter: grayscale(1);
+          transform: scale(0.98); }
 
 .catalogo-principal {
   display: grid;
@@ -133,7 +182,8 @@ header .menu {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "boku chaisaw dbs jujutsu"  "kimetsu pokemon sao tokyo";
   column-gap: 10px;
-  row-gap: .625rem; }
+  row-gap: .625rem;
+  overflow: hidden; }
   .catalogo-principal div img {
     width: 90%;
     height: 70%;
@@ -149,13 +199,18 @@ header .menu {
     font-style: oblique;
     font-weight: bold;
     text-align: center; }
+  .catalogo-principal div h2:hover {
+    filter: drop-shadow(5px 5px 5px white); }
 
 .informacion {
-  height: auto;
-  display: grid;
-  grid-template-rows: repeat(2, 50px 80%);
-  grid-template-areas: "titulo" "caracteristica"; }
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
   .informacion h2 {
+    height: 50px;
     color: #030303;
     /*celeste claro*/
     font-family: "Poppins", sans-serif;
@@ -163,52 +218,80 @@ header .menu {
     font-weight: bold;
     text-align: center; }
   .informacion .caracteristica {
-    display: grid;
-    grid-template-columns: repeat(2, 300px 77%);
-    grid-template-areas: "img-info text-info";
-    column-gap: 10px; }
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; }
     .informacion .caracteristica img {
-      width: 100%;
+      width: 50%;
       height: 100%;
       margin: 10px;
       object-fit: cover; }
     .informacion .caracteristica .text-info {
       background-color: rgba(2, 2, 2, 0.514);
+      border-radius: 10px;
       color: #2b2b2b;
       /*celeste claro*/
       font-family: "Poppins", sans-serif;
       font-style: oblique;
       font-weight: bold;
-      font-size: medium;
+      font-size: 28px;
       text-align: start;
       margin: 10px;
       padding: 10px; }
 
-.noticias {
-  height: auto;
+.noticia {
+  height: 1200px;
+  margin: 10px 0px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   gap: .625rem; }
-  .noticias section {
-    width: 95%;
+  .noticia section {
+    border: solid;
+    width: 100%;
     height: 600px;
-    margin: 10px; }
-    .noticias section img {
-      width: 100%;
-      height: 70%;
-      object-fit: cover; }
-    .noticias section h2 {
-      background-color: rgba(19, 2, 175, 0.486);
-      padding: 10px;
-      color: #030303;
-      /*celeste claro*/
-      font-family: "Poppins", sans-serif;
-      font-style: oblique;
-      font-weight: bold;
-      font-size: medium;
-      text-align: start; }
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: none; }
+    .noticia section div {
+      width: 25%; }
+      .noticia section div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .noticia section div {
+      width: 100%; }
+      .noticia section div h2 {
+        height: 50px;
+        background-color: rgba(48, 31, 202, 0.486);
+        border-radius: 10px;
+        padding: 10px;
+        color: #030303;
+        /*celeste claro*/
+        font-family: "Poppins", sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center; }
+      .noticia section div p {
+        background-color: rgba(48, 31, 202, 0.486);
+        padding: 10px;
+        color: #030303;
+        /*celeste claro*/
+        font-family: "Poppins", sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: start; }
 
 .votacion {
   width: 95%;
@@ -253,8 +336,12 @@ header .menu {
 footer {
   background-color: #0077ff;
   /*celeste oscuro*/
-  padding: 9px;
-  margin-top: auto; }
+  /*padding: 9px;
+    margin-top: auto;*/
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 50px; }
   footer .pie-pagina {
     width: 98%;
     height: 50px;
@@ -289,18 +376,63 @@ footer {
         border-radius: 5px;
         box-shadow: 2px 3px 5px black; }
 
+@media (max-width: 1024px) {
+  .pagina-principal {
+    height: 1500px; }
+    .pagina-principal .ranking {
+      height: 1100px; }
+      .pagina-principal .ranking .puestos div {
+        width: 310px;
+        height: 480px; }
+        .pagina-principal .ranking .puestos div h3 {
+          font-size: 30px; }
+  .informacion .caracteristica .text-info {
+    font-size: 22px; }
+  .noticia section div p {
+    font-size: 17.5px; } }
+
 @media (max-width: 768px) {
-  header .logo {
+  header .encabezado .logo {
     margin-left: 10px;
     margin-top: 5px;
     font-size: 50px; }
-  header .boton-busqueda input {
-    border-radius: 10px;
-    padding-right: 0;
-    padding-left: 0;
-    font-weight: 200px; }
+  header .encabezado .boton-busqueda {
+    width: 300px; }
+    header .encabezado .boton-busqueda input {
+      width: 90%;
+      border-radius: 10px;
+      padding-right: 0;
+      padding-left: 0;
+      font-weight: 200px; }
   .pagina-principal {
-    height: 1200px; }
+    height: 1100px; }
+    .pagina-principal .nov-principal {
+      height: 400px;
+      margin: 5px; }
+      .pagina-principal .nov-principal h2 {
+        font-size: 25px;
+        padding-left: 10px;
+        width: 170px; }
+      .pagina-principal .nov-principal a {
+        height: 250px; }
+    .pagina-principal .ranking {
+      height: 1100px; }
+      .pagina-principal .ranking h2 {
+        font-size: 23px;
+        padding-left: 10px;
+        width: 130px; }
+      .pagina-principal .ranking .puestos {
+        column-gap: 5px;
+        row-gap: 20px; }
+        .pagina-principal .ranking .puestos div {
+          width: 220px;
+          height: 350px;
+          margin: 0px 10px; }
+          .pagina-principal .ranking .puestos div h3 {
+            background-color: #78acfc;
+            width: 150px;
+            position: absolute;
+            border-radius: 10px; }
   .catalogo-principal {
     column-gap: 5px;
     row-gap: .3125rem; }
@@ -310,24 +442,26 @@ footer {
       height: 80%; }
     .catalogo-principal div h2 {
       font-size: 15px; }
-  .informacion .caracteristica {
-    display: grid;
-    grid-template-columns: repeat(2, 200px 70%);
-    grid-template-areas: "img-info text-info";
-    column-gap: 5px; }
-    .informacion .caracteristica img {
-      width: 80%;
-      height: 100%;
-      margin: 5px 5px 0 10px; }
-    .informacion .caracteristica .text-info {
-      margin: 5px; }
-  .noticias section {
-    height: 500px; }
-    .noticias section img {
-      height: 88%; }
+  .informacion .caracteristica img {
+    width: 50%;
+    height: 100%;
+    margin: 5px 5px 0 10px; }
+  .informacion .caracteristica .text-info {
+    margin: 5px;
+    font-size: 17px; }
+  .noticia {
+    height: 1000px; }
+    .noticia section {
+      height: 500px; }
+      .noticia section div h2 {
+        margin: 1px;
+        height: 30px;
+        font-size: 20px; }
+      .noticia section div p {
+        font-size: 14px; }
   footer .pie-pagina {
-    width: 98%;
-    height: 70px;
+    /*width: 98%;*/
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -340,47 +474,65 @@ footer {
       align-items: center;
       gap: 1.25rem; } }
 
-@media (max-width: 320px) {
-  header .encabezado {
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    header .encabezado .logo {
-      font-size: 30px;
-      margin-bottom: 5px; }
-    header .encabezado .boton-busqueda input {
-      border-radius: 10px;
-      padding-right: 0;
-      padding-left: 0;
-      font-weight: 6.25rem; }
-  header .menu {
-    height: 100px; }
-    header .menu .bar-nav {
-      display: grid;
-      grid-template-rows: repeat(2, 40%);
-      grid-template-columns: repeat(2, 40%);
-      grid-template-areas: "inicio catalogo"  "noticias vota";
-      row-gap: .625rem; }
-      header .menu .bar-nav a {
-        margin-right: 20px;
-        margin-left: 0; }
+@media (max-width: 425px) {
+  header {
+    width: 100%;
+    padding: 5px 10px; }
+    header .encabezado {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      header .encabezado .logo {
+        height: 30px;
+        font-size: 30px;
+        margin-bottom: 5px; }
+      header .encabezado .boton-busqueda {
+        width: 100%;
+        height: 30px; }
+        header .encabezado .boton-busqueda input {
+          border-radius: 10px;
+          padding-right: 0;
+          padding-left: 0;
+          font-weight: 6.25rem; }
   .pagina-principal {
-    height: 1200px; }
+    height: 1850px; }
     .pagina-principal .nov-principal {
-      width: 95%; }
+      height: 250px; }
+      .pagina-principal .nov-principal h2 {
+        width: 140px;
+        font-size: 20px; }
+      .pagina-principal .nov-principal a {
+        height: 200px; }
     .pagina-principal .ranking {
-      width: 95%; }
+      width: 95%;
+      height: 1600px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column; }
+      .pagina-principal .ranking h2 {
+        width: 110px;
+        font-size: 20px; }
       .pagina-principal .ranking .puestos {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "puesto1 puesto2" "puesto3 puesto4" "puesto5 puesto6";
-        column-gap: 5px;
-        row-gap: 15px; }
-        .pagina-principal .ranking .puestos div h3 {
-          font-size: medium; }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: .9375rem; }
+        .pagina-principal .ranking .puestos div {
+          width: 250px;
+          height: 250px;
+          margin: 0px 5px; }
+          .pagina-principal .ranking .puestos div h3 {
+            background-color: #78acfc;
+            width: 100px;
+            height: 25px;
+            font-size: 20px;
+            position: absolute;
+            border-radius: 10px; }
+          .pagina-principal .ranking .puestos div .img-principal {
+            object-fit: fill; }
   .catalogo-principal {
     width: 98%;
     display: grid;
@@ -392,35 +544,28 @@ footer {
     .catalogo-principal div h2 {
       font-size: medium; }
   .informacion {
-    width: 95%; }
+    width: 95%;
+    height: 750px; }
+    .informacion h2 {
+      height: 15px; }
     .informacion .caracteristica {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      gap: .3125rem; }
+      gap: 2px; }
       .informacion .caracteristica .text-info {
-        font-size: medium; }
-  .noticias {
-    width: 95%; }
-    .noticias section {
-      width: 95%; }
-  /*.votacion div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: .625rem;
-        .descripcion{
-            height: 50px;
-            h2{
-                font-size: medium;
-            }
-            p{
-                font-size: small;
-            }
-        }
-    }*/
+        font-size: 15px; }
+  .noticia {
+    height: 1200px; }
+    .noticia section {
+      flex-direction: column;
+      height: 650px; }
+      .noticia section div {
+        width: 100%;
+        height: 350px; }
+      .noticia section div p {
+        font-size: 10px; }
   footer {
     height: 100px;
     margin-bottom: 0; }

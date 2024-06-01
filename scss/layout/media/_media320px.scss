@@ -1,16 +1,21 @@
-@media(max-width:320px){
+@media (max-width:425px){
     header{
+        width: 100%;
+        padding: 5px 10px;
         .encabezado{
-            height: 70px;
+            width: 100%;
+            height: 80px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             .logo{
+                height: 30px;
                 font-size: 30px;
                 margin-bottom: 5px;
             }
             .boton-busqueda{
+                width: 100%;
+                height: 30px;
                 input{
                     border-radius: 10px;
                     padding-right: 0;
@@ -19,42 +24,51 @@
                 }
             } 
         }
-        .menu{
-            height: 100px;
-            .bar-nav{
-                display: grid;
-                grid-template-rows: repeat(2, 40%);
-                grid-template-columns: repeat(2, 40%);
-                grid-template-areas: 
-                "inicio catalogo" 
-                "noticias vota";
-                row-gap: .625rem;
-                a{
-                    margin-right: 20px;
-                    margin-left: 0;
-                }
-            }
-        }
+        
     }
     .pagina-principal{
-        height: 1200px;
+        height: 1850px;
         .nov-principal{
-            width: 95%;
+            height: 250px;
+            h2{
+                width: 140px;
+                font-size: 20px;
+            }
+            a{
+                height: 200px;
+            }
         }
         .ranking{
             width: 95%;
+            height: 1600px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            h2{
+                width: 110px;
+                font-size: 20px;
+            }
             .puestos{
-                display: grid;
-                grid-template-rows: repeat(3, 1fr);
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-areas: 
-                "puesto1 puesto2"
-                "puesto3 puesto4"
-                "puesto5 puesto6";
-                column-gap: 5px;
-                row-gap: 15px;
-                div h3{
-                    font-size: medium;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: .9375rem;
+                div{
+                    width: 250px;
+                    height: 250px;
+                    margin: 0px 5px;
+                    h3{
+                        background-color: map-get($color , color6 );
+                        width: 100px;
+                        height: 25px;
+                        font-size: 20px;
+                        position: absolute;
+                        border-radius: 10px;
+                    }
+                    .img-principal{
+                        object-fit: fill;
+                    }
                 }
             }
         }
@@ -77,39 +91,37 @@
     }
     .informacion{
         width: 95%;
+        height: 750px;
+        h2{
+            height: 15px;
+        }
         .caracteristica{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            gap: .3125rem;
+            gap: 2px;
             .text-info{
-                font-size: medium;
+                font-size: 15px;
             }
         }
     }
-    .noticias{
-        width: 95%;
+    .noticia{
+        height: 1200px;
         section{
-            width: 95%;
+            flex-direction: column;
+            height: 650px;
+            div{
+                width: 100%;
+                height: 350px;
+            }
+            div{
+                p{
+                    font-size: 10px;
+                }
+            }
         }
     }
-    /*.votacion div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: .625rem;
-        .descripcion{
-            height: 50px;
-            h2{
-                font-size: medium;
-            }
-            p{
-                font-size: small;
-            }
-        }
-    }*/
     footer{
         height: 100px;
         margin-bottom: 0;

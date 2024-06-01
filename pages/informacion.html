@@ -12,47 +12,54 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="container-fluid m-0 p-0">
+    <header>
         <div class="encabezado">
-            <h1 class="logo">Animox</h1>
+            <div class="logo">
+                <h1>Animox</h1> 
+            </div>
             <div class="boton-busqueda">
-                <label for=""></label>
-                <input type="search" name="" id="" placeholder="Que estas buscando?">
-                <a href=""><img src="../assets/search.svg" alt=""></a>
+                <input type="search" placeholder="Buscar" aria-label="Search">
+                <button type="submit"><img src="../assets/search.svg" alt=""></button>
             </div>
         </div>
         <div>
-            <div class="menu">
-                <ul >
-                    <li class="bar-nav">
-                        <a class="inicio" href="../index.html">inicio</a>
-                        <a class="catalogo" href="./catalogo.html">catalogo</a>
-                        <a class="noticias" href="./noticias.html">noticias</a>
-                        <a class="vota" href="./vota.html">votacion</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="nav">
+                <div class="nav-bar">
+                    <input type="checkbox" name="" id="toggle">
+                    <label for="toggle"><i class="material-icons">Menu</i></label>
+                    <div class="menu">
+                        <ul class="menu-ul">
+                            <li><a class="inicio" href="../index.html">inicio</a></li>
+                            <li><a class="catalogo" href="./catalogo.html">catalogo</a></li>
+                            <li><a class="noticias" href="./noticias.html">noticias</a></li>
+                            <li><a class="vota" href="./vota.html">votacion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-    <main class="container-fluid m-0 p-0">
+    <main>
         <section class="informacion">
             <h2 class="titulo">Sword Art Online</h2>
             <div class="caracteristica">
                 <img class="img-info" src="../assets/sao.webp" alt="">
-                <h3 class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magni aut saepe delectus? Aperiam eum nulla quibusdam, voluptatem sequi obcaecati asperiores error corrupti ea eius assumenda sapiente laboriosam nihil possimus.</h2>
+                <h3 class="text-info">Sword Art Online (ソードアート・オンライン Sōdo Āto Onrain?), también conocida como SAO, es una serie de novela ligera japonesa escrita por Reki Kawahara e ilustradas por Abec. A partir de estas, se han creado diversas adaptaciones, tanto de manga como de anime.Se comenzó a publicar en abril de 2009 por la editorial ASCII Media Works, y se compone hasta octubre de 2022 por 27 volúmenes.
+
+                    Por su parte, la adaptación al anime fue producida por el estudio A-1 Pictures, dirigida por Tomohiko Itō y emitida en Japón por diversas cadenas televisivas desde el 7 de julio de 2012 hasta que finalizó el 22 de diciembre del mismo año con su vigésimo quinto episodio.Su segunda temporada se emitió entre julio y diciembre de 2014, mientras que su tercera temporada fue emitida desde octubre de 2018 hasta septiembre de 2020.</h2>
             </div>
         </section>
     </main>
-    <footer class="container-fluid m-0 p-0">
+    <footer>
         <div class="pie-pagina">
             <h4>Animox</h4>
             <h5>seguinos en nuestras redes!</h5>
             <ul>
                 <li class="redes">
-                    <img class="face" src="../assets/facebook.svg" alt="">
-                    <img class="inst" src="../assets/instagram.svg" alt="">
-                    <img class="tik" src="../assets/tiktok.svg" alt="">
-                    <img class="x" src="../assets/twitter.svg" alt="">
+                    <a href=""><img class="face" src="../assets/facebook.svg" alt=""></a>
+                    <a href=""><img class="inst" src="../assets/instagram.svg" alt=""></a>
+                    <a href=""><img class="tik" src="../assets/tiktok.svg" alt=""></a>
+                    <a href=""><img class="x" src="../assets/twitter.svg" alt=""></a>
                 </li>
             </ul>
         </div>

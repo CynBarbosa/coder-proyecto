@@ -10,6 +10,7 @@
     "kimetsu pokemon sao tokyo";
     column-gap: 10px;
     row-gap: .625rem;
+    overflow: hidden;
     div img{
         width: 90%;
         height: 70%;
@@ -24,5 +25,8 @@
         color: map-get($color , color3 );/*celeste claro*/
         @include tipografia;
         text-align: center;
+    }
+    div h2:hover{
+        filter: drop-shadow(5px 5px 5px white);
     }
 }

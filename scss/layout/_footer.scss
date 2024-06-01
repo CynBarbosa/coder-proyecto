@@ -3,8 +3,12 @@
 
 footer{
     background-color: map-get($color , color2 );/*celeste oscuro*/
-    padding: 9px;
-    margin-top: auto;
+    /*padding: 9px;
+    margin-top: auto;*/
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
     .pie-pagina{
         width: 98%;
         height: 50px;

@@ -14,48 +14,71 @@
 <body>
     <header>
         <div class="encabezado">
-            <h1 class="logo">Animox</h1>
+            <div class="logo">
+                <h1>Animox</h1> 
+            </div>
             <div class="boton-busqueda">
-                <label for=""></label>
-                <input type="search" name="" id="" placeholder="Que estas buscando?">
-                <a href=""><img src="../assets/search.svg" alt=""></a>
+                <input type="search" placeholder="Buscar" aria-label="Search">
+                <button type="submit"><img src="../assets/search.svg" alt=""></button>
             </div>
         </div>
         <div>
-            <div class="menu">
-                <ul >
-                    <li class="bar-nav">
-                        <a class="inicio" href="../index.html">inicio</a>
-                        <a class="catalogo" href="./catalogo.html">catalogo</a>
-                        <a class="noticias" href="#">noticias</a>
-                        <a class="vota" href="./vota.html">votacion</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="nav">
+                <div class="nav-bar">
+                    <input type="checkbox" name="" id="toggle">
+                    <label for="toggle"><i class="material-icons">Menu</i></label>
+                    <div class="menu">
+                        <ul class="menu-ul">
+                            <li><a class="inicio" href="../index.html">inicio</a></li>
+                            <li><a class="catalogo" href="./catalogo.html">catalogo</a></li>
+                            <li><a class="noticias" href="#">noticias</a></li>
+                            <li><a class="vota" href="./vota.html">votacion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
-        <div class="noticias">
+        <div class="noticia">
             <section class="noticias1">
-                <img src="https://images.unsplash.com/photo-1613487957484-32c977a8bd62?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi? Aut cum perspiciatis rerum voluptates excepturi illo laborum dignissimos exercitationem?</h2>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1613487957484-32c977a8bd62?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div>
+                    <h2>Japon</h2>
+                    <p>Llega el Festival de la Cultura Japonesa a la Nave Cultural y es por eso que la Ciudad extiende una cordial invitación a todos los amantes de esta cultura oriental para sumarse en un emocionante viaje a través de las tradiciones, el arte y la historia de Japón.
+
+                        El gran festival comenzará este domingo 1 de octubre y será de 12 a 21 en la Nave Cultural. Además, el Cineclub Stocco presentará una preciosa y rara joya del cine de terror bizarro japonés, «Hausu» de Nobuhiko Obayashi. La función será a las 17.45, el mismo domingo.
+                        
+                        El evento en general, rendirá homenaje a la riqueza de la cultura japonesa y promete una experiencia enriquecedora e inolvidable. También podés adquirir tus entradas a través del link de la bio en @descubri_japon.
+                        
+                        El encuentro está diseñado para personas de todas las edades, desde familias curiosas hasta entusiastas de la cultura japonesa y amantes de las artes marciales. Con la entrada podrás disfrutar de toda la jornada.</p>
+                </div>
             </section>
             <section class="noticias2">
-                <img src="../assets/kimetsu.webp" alt="">
-                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem! Officia cumque exercitationem magni. Reiciendis voluptatibus ipsum nam rem nisi!</h2>
+                <div>
+                    <img src="../assets/kimetsu.webp" alt="">
+                </div>
+                <div>
+                    <h2>Kimetsu no yaiba</h2>
+                    <p>Actualmente se está emitiendo la cuarta temporada de Kimetsu no Yaiba, cuyo argumento está abarcando todos los acontecimientos que forman parte del arco del Entrenamiento de los Pilares. Hasta el momento se han emitido tres de los ocho capítulos que formarán parte de esta nueva tanda, aunque el último de ellos no ha dejado a nadie indiferente por los sucesos que transcurren en él.
+
+                        El motivo se debe a que en este episodio solo se ha empleado una página y media del manga, cuya duración es muy escasa. Por lo tanto, el resto del tiempo de los 20 minutos que dura el capítulo ha sido relleno puro y duro, ya que ha sido material inventado que no existe en la obra original. Un hecho que sin duda ha pillado por sorpresa a los aficionados por la cantidad de volúmenes que quedan por ser adaptados.</p>
+                </div>
             </section>
         </div>
     </main>
-    <footer class="container-fluid m-0 p-0">
+    <footer>
         <div class="pie-pagina">
             <h4>Animox</h4>
             <h5>seguinos en nuestras redes!</h5>
             <ul>
                 <li class="redes">
-                    <img class="face" src="../assets/facebook.svg" alt="">
-                    <img class="inst" src="../assets/instagram.svg" alt="">
-                    <img class="tik" src="../assets/tiktok.svg" alt="">
-                    <img class="x" src="../assets/twitter.svg" alt="">
+                    <a href=""><img class="face" src="../assets/facebook.svg" alt=""></a>
+                    <a href=""><img class="inst" src="../assets/instagram.svg" alt=""></a>
+                    <a href=""><img class="tik" src="../assets/tiktok.svg" alt=""></a>
+                    <a href=""><img class="x" src="../assets/twitter.svg" alt=""></a>
                 </li>
             </ul>
         </div>

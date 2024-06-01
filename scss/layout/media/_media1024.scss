@@ -1,0 +1,36 @@
+@import "../utilities/maps";
+@import "../utilities/mixins";
+
+@media (max-width:1024px){
+    .pagina-principal{
+        height: 1500px;
+        .ranking{
+            height: 1100px;
+            .puestos{
+                div{
+                    width: 310px;
+                    height: 480px;
+                    h3{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .informacion{
+        .caracteristica{
+            .text-info{
+                font-size: 22px;
+            }
+        }
+    }
+    .noticia{
+        section{
+            div{
+                p{
+                    font-size: 17.5px;
+                }
+            }
+        }
+    }
+}

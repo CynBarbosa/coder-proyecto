@@ -12,26 +12,31 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="container-fluid m-0 p-0">
+    <header>
         <div class="encabezado">
-            <h1 class="logo">Animox</h1>
+            <div class="logo">
+                <h1>Animox</h1> 
+            </div>
             <div class="boton-busqueda">
-                <label for=""></label>
-                <input type="search" name="" id="" placeholder="Que estas buscando?">
-                <a href=""><img src="../assets/search.svg" alt=""></a>
+                <input type="search" placeholder="Buscar" aria-label="Search">
+                <button type="submit"><img src="../assets/search.svg" alt=""></button>
             </div>
         </div>
         <div>
-            <div class="menu">
-                <ul >
-                    <li class="bar-nav">
-                        <a class="inicio" href="../index.html">inicio</a>
-                        <a class="catalogo" href="./catalogo.html">catalogo</a>
-                        <a class="noticias" href="./noticias.html">noticias</a>
-                        <a class="vota" href="#">votacion</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="nav">
+                <div class="nav-bar">
+                    <input type="checkbox" name="" id="toggle">
+                    <label for="toggle"><i class="material-icons">Menu</i></label>
+                    <div class="menu">
+                        <ul class="menu-ul">
+                            <li><a class="inicio" href="../index.html">inicio</a></li>
+                            <li><a class="catalogo" href="./catalogo.html">catalogo</a></li>
+                            <li><a class="noticias" href="./noticias.html">noticias</a></li>
+                            <li><a class="vota" href="#">votacion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main class="container-fluid m-0 p-0">
@@ -108,10 +113,10 @@
             <h5>seguinos en nuestras redes!</h5>
             <ul>
                 <li class="redes">
-                    <img class="face" src="../assets/facebook.svg" alt="">
-                    <img class="inst" src="../assets/instagram.svg" alt="">
-                    <img class="tik" src="../assets/tiktok.svg" alt="">
-                    <img class="x" src="../assets/twitter.svg" alt="">
+                    <a href=""><img class="face" src="../assets/facebook.svg" alt=""></a>
+                    <a href=""><img class="inst" src="../assets/instagram.svg" alt=""></a>
+                    <a href=""><img class="tik" src="../assets/tiktok.svg" alt=""></a>
+                    <a href=""><img class="x" src="../assets/twitter.svg" alt=""></a>
                 </li>
             </ul>
         </div>

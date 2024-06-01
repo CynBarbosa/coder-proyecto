@@ -14,75 +14,80 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="container-fluid m-0 p-0">
+    <header>
         <div class="encabezado">
-            <h1 class="logo">Animox</h1>
+            <div class="logo">
+                <h1>Animox</h1> 
+            </div>
             <div class="boton-busqueda">
-                <label for=""></label>
-                <input type="search" name="" id="" placeholder="Que estas buscando?">
-                <a href=""><img src="../assets/search.svg" alt=""></a>
+                <input type="search" placeholder="Buscar" aria-label="Search">
+                <button type="submit"><img src="./assets/search.svg" alt=""></button>
             </div>
         </div>
         <div>
-            <div class="menu">
-                <ul >
-                    <li class="bar-nav">
-                        <a class="inicio" href="#">inicio</a>
-                        <a class="catalogo" href="./pages/catalogo.html">catalogo</a>
-                        <a class="noticias" href="./pages/noticias.html">noticias</a>
-                        <a class="vota" href="./pages/vota.html">votacion</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="nav">
+                <div class="nav-bar">
+                    <input type="checkbox" name="" id="toggle">
+                    <label for="toggle"><i class="material-icons">Menu</i></label>
+                    <div class="menu">
+                        <ul class="menu-ul">
+                            <li><a class="inicio" href="#">inicio</a></li>
+                            <li><a class="catalogo" href="./pages/catalogo.html">catalogo</a></li>
+                            <li><a class="noticias" href="./pages/noticias.html">noticias</a></li>
+                            <li><a class="vota" href="./pages/vota.html">votacion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-    <main class="container-fluid m-0 p-0">
+    <main>
         <div class="pagina-principal">
             <section class="nov-principal">
-                <h2>Novedades</h2>
-                <a href="./pages/noticias.html"><img src="https://images.unsplash.com/photo-1613487957484-32c977a8bd62?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+                <h2 class="text-novedad">Novedades</h2>
+                <a class="img-novedad" href="./pages/noticias.html"><img src="https://images.unsplash.com/photo-1613487957484-32c977a8bd62?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
             </section>
             <section class="ranking">
                 <h2 class="desc-ranking">Ranking</h3>
                 <div class="puestos">
                     <div class="puesto1">
-                        <img class="img-principal" src="./assets/jujutsu.webp" alt="">
                         <h3>Puesto 1</h3>
+                        <a href="./pages/informacion.html"><img class="img-principal" src="./assets/jujutsu.webp" alt=""></a>
                     </div>
                     <div class="puesto2">
-                        <img class="img-principal" src="./assets/kimetsu.webp" alt="">
                         <h3>Puesto 2</h3>
+                        <a href="./pages/informacion.html"><img class="img-principal" src="./assets/kimetsu.webp" alt=""></a>
                     </div>
                     <div class="puesto3">
-                        <img class="img-principal" src="./assets/dragon-ball-super.jpg" alt="">
                         <h3>Puesto 3</h3>
+                        <a href="./pages/informacion.html"><img class="img-principal" src="./assets/dragon-ball-super.jpg" alt=""></a>
                     </div>
                     <div class="puesto4">
-                        <img class="img-principal" src="./assets/boku no hero.jpg" alt="">
                         <h3>Puesto 4</h3>
+                        <a href="./pages/informacion.html"><img class="img-principal" src="./assets/boku no hero.jpg" alt=""></a>
                     </div>
                     <div class="puesto5">
-                        <img class="img-principal" src="./assets/chainsaw man.webp" alt="">
                         <h3>Puesto 5</h3>
+                        <a href="./pages/informacion.html"><img class="img-principal" src="./assets/chainsaw man.webp" alt=""></a>
                     </div>
                     <div class="puesto6">
-                        <img class="img-principal" src="./assets/sao.webp" alt="">
                         <h3>Puesto 6</h3>
+                        <a href="./pages/informacion.html"><img class="img-principal" src="./assets/sao.webp" alt=""></a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    <footer class="container-fluid m-0 p-0">
+    <footer>
         <div class="pie-pagina">
             <h4 class="logo-pie">Animox</h4>
             <h5 class="seguinos">seguinos en nuestras redes!</h5>
             <ul>
                 <li class="redes">
-                    <img class="face" src="./assets/facebook.svg" alt="">
-                    <img class="inst" src="./assets/instagram.svg" alt="">
-                    <img class="tik" src="./assets/tiktok.svg" alt="">
-                    <img class="x" src="./assets/twitter.svg" alt="">
+                    <a href=""><img class="face" src="./assets/facebook.svg" alt=""></a>
+                    <a href=""><img class="inst" src="./assets/instagram.svg" alt=""></a>
+                    <a href=""><img class="tik" src="./assets/tiktok.svg" alt=""></a>
+                    <a href=""><img class="x" src="./assets/twitter.svg" alt=""></a>
                 </li>
             </ul>
         </div>
