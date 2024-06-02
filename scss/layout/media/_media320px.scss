@@ -123,6 +123,34 @@
             }
         }
     }
+    .votacion{
+        .contein-vota{
+            flex-direction: column;
+            img{
+                margin-left: 5px;
+                width: 50%;
+                height: 50%;
+                margin-left: none;
+            }
+            .descripcion{
+                width: 98%;
+                h2{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+            button{
+                width: 100px;
+                height: 70px;
+                margin: 10px 0px;
+                border-radius: 5px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
     footer{
         height: 100px;
         margin-bottom: 0;

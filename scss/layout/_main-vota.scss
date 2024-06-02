@@ -2,38 +2,56 @@
 @import "../utilities/mixins";
 
 .votacion{
-    width: 95%;
+    width: 100%;
     height: auto;
-    margin: 10px;
-    img{
-        width: 15%;
-        height: 15%;
-        margin: 0px;
-        margin-left: 20px;
-        object-fit: cover;
-    }
-    .descripcion {
-        background-color: rgba(88, 87, 87, 0.192);
-        height: 150px;
-        padding: 20px;
-        @include border;
-        h2{
-            color: map-get($color , color3 );/*celeste claro*/
-            @include tipografia;
-            font-size: x-large;
-            text-align: start;
+    .contein-vota{
+        margin: 10px 0px;
+        @include flex;
+        gap: .3125rem;
+        overflow: hidden;
+        img{
+            width: 18%;
+            height: 18%;
+            margin-left: 10px;
+            object-fit: cover;
         }
-        p{
-            color: map-get($color , color3 );/*celeste claro*/
-            @include tipografia;
-            font-size: medium;
-            text-align: start; 
+        .descripcion {
+            width: 74%;
+            height: auto;
+            padding: 10px;
+            @include border;
+            h2{
+                width: 100%;
+                color: map-get($color , color3 );/*celeste claro*/
+                text-shadow: 2px 3px 5px map-get($color , color5 );
+                @include tipografia;
+                font-size: x-large;
+                text-align: center;
+            }
+            p{
+                width: 98%;
+                margin: 5px;
+                color: map-get($color , color5);/*celeste claro*/
+                @include tipografia;
+                font-size: medium;
+                text-align: start;
+            }
         }
-    }
-    div button{
-        width: 100px;
-        height: 100px;
-        @include tipografia;
-        font-size: larger;
+        button{
+            border: none;
+            background-color: yellow;
+            color: black;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            padding: 2px;
+            margin: 5px;
+            @include tipografia;
+            font-size: larger;
+        }
+        button:hover{
+            background-color: black;
+            color: yellow;
+        }
     }
 }

@@ -23,6 +23,7 @@
             object-fit: cover;
         }
         .text-info{
+            height: auto;
             background-color: rgba(2, 2, 2, 0.514);
             border-radius: 10px;
             color: map-get($color , color4 );/*celeste claro*/

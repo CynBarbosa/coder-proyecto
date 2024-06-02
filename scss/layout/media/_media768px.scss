@@ -95,7 +95,23 @@
                     font-size: 14px;
                 }
             }
-
+        }
+    }
+    .votacion{
+        .contein-vota{
+            .descripcion{
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+            button{
+                height: 65px;
+                font-size: 18px;
+                text-align: center;
+            }
         }
     }
     footer{

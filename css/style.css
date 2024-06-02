@@ -231,6 +231,7 @@ header {
       margin: 10px;
       object-fit: cover; }
     .informacion .caracteristica .text-info {
+      height: auto;
       background-color: rgba(2, 2, 2, 0.514);
       border-radius: 10px;
       color: #2b2b2b;
@@ -293,44 +294,63 @@ header {
         text-align: start; }
 
 .votacion {
-  width: 95%;
-  height: auto;
-  margin: 10px; }
-  .votacion img {
-    width: 15%;
-    height: 15%;
-    margin: 0px;
-    margin-left: 20px;
-    object-fit: cover; }
-  .votacion .descripcion {
-    background-color: rgba(88, 87, 87, 0.192);
-    height: 150px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 2px 3px 5px black; }
-    .votacion .descripcion h2 {
-      color: #030303;
-      /*celeste claro*/
+  width: 100%;
+  height: auto; }
+  .votacion .contein-vota {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .3125rem;
+    overflow: hidden; }
+    .votacion .contein-vota img {
+      width: 18%;
+      height: 18%;
+      margin-left: 10px;
+      object-fit: cover; }
+    .votacion .contein-vota .descripcion {
+      width: 74%;
+      height: auto;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 3px 5px black; }
+      .votacion .contein-vota .descripcion h2 {
+        width: 100%;
+        color: #030303;
+        /*celeste claro*/
+        text-shadow: 2px 3px 5px white;
+        font-family: "Poppins", sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: x-large;
+        text-align: center; }
+      .votacion .contein-vota .descripcion p {
+        width: 98%;
+        margin: 5px;
+        color: white;
+        /*celeste claro*/
+        font-family: "Poppins", sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: medium;
+        text-align: start; }
+    .votacion .contein-vota button {
+      border: none;
+      background-color: yellow;
+      color: black;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      padding: 2px;
+      margin: 5px;
       font-family: "Poppins", sans-serif;
       font-style: oblique;
       font-weight: bold;
-      font-size: x-large;
-      text-align: start; }
-    .votacion .descripcion p {
-      color: #030303;
-      /*celeste claro*/
-      font-family: "Poppins", sans-serif;
-      font-style: oblique;
-      font-weight: bold;
-      font-size: medium;
-      text-align: start; }
-  .votacion div button {
-    width: 100px;
-    height: 100px;
-    font-family: "Poppins", sans-serif;
-    font-style: oblique;
-    font-weight: bold;
-    font-size: larger; }
+      font-size: larger; }
+    .votacion .contein-vota button:hover {
+      background-color: black;
+      color: yellow; }
 
 footer {
   background-color: #0077ff;
@@ -388,7 +408,11 @@ footer {
   .informacion .caracteristica .text-info {
     font-size: 22px; }
   .noticia section div p {
-    font-size: 17.5px; } }
+    font-size: 17.5px; }
+  .votacion .contein-vota button {
+    width: 70px;
+    height: 70px;
+    font-size: 19px; } }
 
 @media (max-width: 768px) {
   header .encabezado .logo {
@@ -458,6 +482,14 @@ footer {
         font-size: 20px; }
       .noticia section div p {
         font-size: 14px; }
+  .votacion .contein-vota .descripcion h2 {
+    font-size: 20px; }
+  .votacion .contein-vota .descripcion p {
+    font-size: 13px; }
+  .votacion .contein-vota button {
+    height: 65px;
+    font-size: 18px;
+    text-align: center; }
   footer .pie-pagina {
     /*width: 98%;*/
     height: 50px;
@@ -566,6 +598,26 @@ footer {
         height: 350px; }
       .noticia section div p {
         font-size: 10px; }
+  .votacion .contein-vota {
+    flex-direction: column; }
+    .votacion .contein-vota img {
+      margin-left: 5px;
+      width: 50%;
+      height: 50%;
+      margin-left: none; }
+    .votacion .contein-vota .descripcion {
+      width: 98%; }
+      .votacion .contein-vota .descripcion h2 {
+        font-size: 15px; }
+      .votacion .contein-vota .descripcion p {
+        font-size: 10px; }
+    .votacion .contein-vota button {
+      width: 100px;
+      height: 70px;
+      margin: 10px 0px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-align: center; }
   footer {
     height: 100px;
     margin-bottom: 0; }
