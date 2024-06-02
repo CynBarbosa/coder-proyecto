@@ -124,7 +124,7 @@ header {
       transform: scale(0.98); }
   .pagina-principal .ranking {
     width: 98%;
-    height: 1300px;
+    height: auto;
     margin: 10px;
     display: flex;
     flex-direction: row;
@@ -150,21 +150,25 @@ header {
       column-gap: 10px;
       row-gap: 35px; }
       .pagina-principal .ranking .puestos div {
+        border: solid;
         width: 410px;
-        height: 600px;
+        height: 620px;
         margin: 0px 10px 0px 10px;
         overflow: hidden;
         position: relative; }
         .pagina-principal .ranking .puestos div h3 {
+          width: 200px;
           margin-top: 5px;
+          background-color: #78acfc;
           color: #030303;
           /*celeste claro*/
+          border-radius: 10px;
           font-family: "Poppins", sans-serif;
           font-style: oblique;
           font-weight: bold;
           font-size: 40px;
           text-align: center;
-          position: relative; }
+          position: absolute; }
         .pagina-principal .ranking .puestos div h3:hover {
           filter: drop-shadow(5px 5px 5px white); }
         .pagina-principal .ranking .puestos div .img-principal {
@@ -399,10 +403,10 @@ footer {
   .pagina-principal {
     height: 1500px; }
     .pagina-principal .ranking {
-      height: 1100px; }
+      height: auto; }
       .pagina-principal .ranking .puestos div {
         width: 310px;
-        height: 480px; }
+        height: 500px; }
         .pagina-principal .ranking .puestos div h3 {
           font-size: 30px; }
   .informacion .caracteristica .text-info {
@@ -439,7 +443,7 @@ footer {
       .pagina-principal .nov-principal a {
         height: 250px; }
     .pagina-principal .ranking {
-      height: 1100px; }
+      height: auto; }
       .pagina-principal .ranking h2 {
         font-size: 23px;
         padding-left: 10px;
@@ -528,7 +532,7 @@ footer {
           padding-left: 0;
           font-weight: 6.25rem; }
   .pagina-principal {
-    height: 1850px; }
+    height: auto; }
     .pagina-principal .nov-principal {
       height: 250px; }
       .pagina-principal .nov-principal h2 {
@@ -538,7 +542,7 @@ footer {
         height: 200px; }
     .pagina-principal .ranking {
       width: 95%;
-      height: 1600px;
+      height: auto;
       margin: 10px;
       display: flex;
       flex-direction: column; }
@@ -553,7 +557,7 @@ footer {
         gap: .9375rem; }
         .pagina-principal .ranking .puestos div {
           width: 250px;
-          height: 250px;
+          height: 320px;
           margin: 0px 5px; }
           .pagina-principal .ranking .puestos div h3 {
             background-color: #78acfc;
@@ -562,8 +566,6 @@ footer {
             font-size: 20px;
             position: absolute;
             border-radius: 10px; }
-          .pagina-principal .ranking .puestos div .img-principal {
-            object-fit: fill; }
   .catalogo-principal {
     width: 98%;
     display: grid;

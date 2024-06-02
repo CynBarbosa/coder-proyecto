@@ -40,7 +40,7 @@
     }
     .ranking{
         width: 98%;
-        height: 1300px;
+        height: auto;
         margin: 10px;
         @include flex;
         flex-direction: column;
@@ -63,18 +63,22 @@
             column-gap: 10px;
             row-gap: 35px;
             div{
+                border: solid;
                 width: 410px;
-                height: 600px;
+                height: 620px;
                 margin: 0px 10px 0px 10px;
                 overflow: hidden;
                 position: relative;                
                 h3{
+                    width: 200px;
                     margin-top: 5px;
+                    background-color: map-get($color , color6 );
                     color: map-get($color , color3 );/*celeste claro*/
+                    border-radius: 10px;
                     @include tipografia;
                     font-size: 40px;
                     text-align: center;
-                    position: relative;
+                    position: absolute;
                 }
                 h3:hover{
                     filter: drop-shadow(5px 5px 5px white);
