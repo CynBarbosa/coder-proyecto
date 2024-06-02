@@ -199,12 +199,11 @@ header {
   .catalogo-principal div h2 {
     color: #030303;
     /*celeste claro*/
+    text-shadow: 2px 3px 5px white;
     font-family: "Poppins", sans-serif;
     font-style: oblique;
     font-weight: bold;
     text-align: center; }
-  .catalogo-principal div h2:hover {
-    filter: drop-shadow(5px 5px 5px white); }
 
 .informacion {
   height: 550px;
@@ -217,6 +216,7 @@ header {
     height: 50px;
     color: #030303;
     /*celeste claro*/
+    text-shadow: 2px 3px 5px white;
     font-family: "Poppins", sans-serif;
     font-style: oblique;
     font-weight: bold;
@@ -249,7 +249,7 @@ header {
       padding: 10px; }
 
 .noticia {
-  height: 1200px;
+  height: auto;
   margin: 10px 0px;
   display: flex;
   flex-direction: row;
@@ -259,7 +259,7 @@ header {
   gap: .625rem; }
   .noticia section {
     width: 100%;
-    height: 600px;
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -273,21 +273,23 @@ header {
         height: 100%;
         object-fit: cover; }
     .noticia section div {
-      width: 100%; }
+      width: 100%;
+      height: auto;
+      background-color: rgba(48, 31, 202, 0.486);
+      border-radius: 10px; }
       .noticia section div h2 {
         height: 50px;
-        background-color: rgba(48, 31, 202, 0.486);
-        border-radius: 10px;
         padding: 10px;
         color: #030303;
         /*celeste claro*/
+        text-shadow: 2px 3px 5px white;
         font-family: "Poppins", sans-serif;
         font-style: oblique;
         font-weight: bold;
         font-size: 30px;
         text-align: center; }
       .noticia section div p {
-        background-color: rgba(48, 31, 202, 0.486);
+        /*background-color: rgba(48, 31, 202, 0.486);*/
         padding: 10px;
         color: #030303;
         /*celeste claro*/
@@ -578,7 +580,7 @@ footer {
       font-size: medium; }
   .informacion {
     width: 100%;
-    height: 750px;
+    height: auto;
     margin: 0px; }
     .informacion h2 {
       height: 15px; }
@@ -594,12 +596,14 @@ footer {
     height: 1200px; }
     .noticia section {
       flex-direction: column;
-      height: 650px; }
+      height: auto; }
       .noticia section div {
         width: 100%;
         height: 350px; }
-      .noticia section div p {
-        font-size: 10px; }
+      .noticia section div {
+        margin-top: 5px; }
+        .noticia section div p {
+          font-size: 9px; }
   .votacion .contein-vota {
     flex-direction: column; }
     .votacion .contein-vota img {
